@@ -20,10 +20,16 @@
  * 
  */
 
+//Operador | Retorna el equivalente en decimal de aquellos bites que contengan el 1
 console.log(9|3); //00001011
 console.log(15|3); //00001111
-console.log(3|7); //000000111
+console.log(3|7); //00000111
+console.log(2|1); //00000011
+console.log(6|2); //00000110
 
+//Operador & Retorna el equivalente en decimal de aquellos bites donde solamente coincidan los 1
 console.log(9&3); //000000001
 console.log(15&3); //00000011
 console.log(3&7); //00000011
+console.log(2&1); //00000000
+console.log(6&2); //00000010
