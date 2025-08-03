@@ -1,25 +1,40 @@
 //Personaje de TV
-let nombre = "Stan March";
-let serie = "Sout Park";
-let edad = 8;
+let nombre = "Stan Marsh";
+let edad = 10;
+let nombrePrograma = "South Park";
 
-let personaje={
-    //Se conoce como par llave-valor o propiedad
-    nombre: "Stan March",
-    serie: "South Park",
-    edad: "8",
-};
+let personaje = {
+    nombre: nombre,
+    edad: edad,
+    nombrePrograma: nombrePrograma
+}
 
 console.log(personaje);
-console.log(personaje.nombre);
-console.log(personaje['edad']);
+console.log("Actualizamos personaje de la misma serie/programa");
 
-personaje.edad = 10;
+personaje.nombre = "Eric Cartman";
+personaje['edad'] = 9;
+console.log(personaje);
 
-personaje['edad'] = 16;
-let llave = 'edad';
-personaje[llave]=18;
 
-delete personaje.serie;
+console.log("Actualizamos personaje de otra serie/programa");
 
-console.log(personaje)
+personaje ={
+    nombre: "Armando Mendoza",
+    edad: 27,
+}
+
+personaje.nombrePrograma = "Yo soy Betty La Fea";
+
+console.log(personaje);
+
+llave = 'nombre';
+personaje[llave] = "Mario Calderon";
+
+console.log(personaje);
+
+//Eliminamos alguna propiedad
+delete personaje.nombrePrograma;
+
+console.log(personaje);
+console.log(typeof personaje);
