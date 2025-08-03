@@ -15,7 +15,7 @@
 //console.log([]&&{}); //Devuelve el ultimo de los true si todos los operadores son true
 //Salida: {}
 
-let nombre ='Chanchito';
+let nombre ='';
 
 let usermane = nombre || 'Anonimo'; // Salida: Anonimo
 console.log(usermane);
@@ -30,7 +30,7 @@ function fc2(){
     return true;
 }
 
-let x = fc1() && fc2();
-console.log(x);
+let x = fc1() || fc2();
+
 
 
